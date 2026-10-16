@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gallary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <p > Welcome to my gallary</p>
+    <nav> 
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#gal">gallary</a></li>
+        <li><a href="#ab">about</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+<h1 class="title"> My gallary</h1>
+   <div class="gallary"  id ="gal">
+<img src="https://picsum.photos/id/1015/400/300" alt="Sample 1">
+  <img src="https://picsum.photos/id/1016/400/300" alt="Sample 2">
+  <img src="https://picsum.photos/id/1018/400/300" alt="Sample 3">
+  <img src="https://picsum.photos/id/1020/400/300" alt="Sample 4">
+  <img src="https://picsum.photos/id/1035/600/400" alt="Sample 5">
+   <img src="https://picsum.photos/id/1024/600/400" alt="Sample 6">
+   </div> 
+   <div class="lightbox" id="lightbox" >
+    <!-- <button>&times;</button> -->
+     <span class="close" onclick="closelightbox()">&times;</span>
+        <!-- <button>&#10095;</button> -->
+          <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <img  id= "lightbox-img" src="" alt="">
+          <!-- <button>&#10094;</button> -->
+            <span class="next" onclick="changeImage(1)">&#10095;</span>
+   </div>
+  </section>
+ <section class="about" id="ab">
+<div class="about-content">
+  <div class="about-img"></div>
+  <div class="about-text">
+    <h2> About Me</h2>
+    <p> Hello! I'm Roka, a passionate photographer and and sharing in my journey!</p>
+<a href="#" class="btn"> Read More</a>
+  </div>
+  </div>
+  </section>
+   <footer class="footer">
+    <p > Copyright © Roka My Gallary</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
